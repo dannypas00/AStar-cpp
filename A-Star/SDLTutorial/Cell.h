@@ -5,7 +5,7 @@
 class Cell
 {
 public:
-	SDL_Rect* rect;
+	SDL_Rect rect;
 	bool traversible;
 	float gCost;
 	float hCost;
@@ -15,7 +15,7 @@ public:
 	void CalculatehCost();
 	void CalculatefCost();
 	void SetTraversible(bool);
-	Cell(SDL_Rect* rect)
+	Cell(SDL_Rect rect)
 	{
 		this->rect = rect;
 	};
